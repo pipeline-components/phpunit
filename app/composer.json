@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpunit/phpunit": "^4.8",
+        "potherca/phpunit-testcase-traits": "^0.7.0"
+    }
+}
