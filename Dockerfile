@@ -3,7 +3,7 @@ FROM php:5.6-alpine3.8 as build
 RUN curl -o /composer   https://getcomposer.org/download/1.4.3/composer.phar
 COPY app/ /app/
 WORKDIR /app/
-RUN php /composer install --no-interaction --no-scripts --no-progress --optimize-autoloader 
+RUN php /composer install --no-interaction --no-scripts --no-progress
 
 FROM php:5.6-alpine3.8
 ENV PATH "$PATH:/app/vendor/bin/"
@@ -17,6 +17,7 @@ RUN apk add --virtual build-dependencies --no-cache build-base=0.5-r1 autoconf=2
     && rm -rf /tmp/pear
 
 COPY --from=build /app/ /app/
+COPY php.ini /usr/local/etc/php/php.ini
 
 WORKDIR /code/
 # Build arguments
