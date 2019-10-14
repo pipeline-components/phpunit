@@ -5,7 +5,13 @@ COPY app/ /app/
 WORKDIR /app/
 RUN php /composer install --no-interaction --no-scripts --no-progress
 
+FROM pipelinecomponents/base-entrypoint:0.1.0 as entrypoint
+
 FROM php:5.6-alpine3.8
+COPY --from=entrypoint /entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+ENV DEFAULTCMD phpunit
+
 ENV PATH "$PATH:/app/vendor/bin/"
 RUN apk add --virtual build-dependencies --no-cache build-base=0.5-r1 autoconf=2.69-r2 \
     && docker-php-source extract \

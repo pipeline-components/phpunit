@@ -1,5 +1,8 @@
 ---
-include: https://gitlab.com/pipeline-components/ci-config/raw/master/pipeline.yml
+include:
+  - project: 'pipeline-components/org/config'
+    ref: master
+    file: pipeline.yml
 
 test amd64:
   variables:
@@ -7,3 +10,10 @@ test amd64:
   extends: .test
   script:
     - docker run --rm "${CI_REGISTRY_IMAGE}/${BUILD_ARCH}:${CI_COMMIT_SHA}" phpunit --version
+
+test amd64 defaultcmd:
+  variables:
+    BUILD_ARCH: amd64
+  extends: .test
+  script:
+    - docker run --rm "${CI_REGISTRY_IMAGE}/${BUILD_ARCH}:${CI_COMMIT_SHA}" --version
