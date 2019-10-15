@@ -1,13 +1,13 @@
-FROM php:5.6-alpine3.8 as build
+FROM composer:1.9.0 as build
 
-RUN curl -o /composer   https://getcomposer.org/download/1.4.3/composer.phar
 COPY app/ /app/
+RUN composer install --no-interaction --no-scripts --no-progress
 WORKDIR /app/
-RUN php /composer install --no-interaction --no-scripts --no-progress
 
 FROM pipelinecomponents/base-entrypoint:0.1.0 as entrypoint
 
-FROM php:5.6-alpine3.8
+FROM php:7.1.32-alpine3.10
+
 COPY --from=entrypoint /entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 ENV DEFAULTCMD phpunit
