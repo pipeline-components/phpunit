@@ -9,7 +9,7 @@ test amd64:
     BUILD_ARCH: amd64
   extends: .test
   script:
-    - docker run --rm "${CI_REGISTRY_IMAGE}/${BUILD_ARCH}:${CI_COMMIT_SHA}" phpunit test/integrationTest.php
+    - docker run --rm -v $(pwd):/code "${CI_REGISTRY_IMAGE}/${BUILD_ARCH}:${CI_COMMIT_SHA}" phpunit test/integrationTest.php
 
 test amd64 defaultcmd:
   variables:
