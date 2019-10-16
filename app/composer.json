@@ -1,7 +1,6 @@
 {
     "type": "application",
     "require": {
-        "phpunit/phpunit": "7.5.16",
-        "potherca/phpunit-testcase-traits": "0.7.0"
+        "phpunit/phpunit": "7.5.16"
     }
 }
