@@ -16,7 +16,7 @@ ENV PATH "$PATH:/app/vendor/bin/"
 RUN apk add --no-cache 	curl=7.66.0-r0 \
     && apk add --virtual build-dependencies --no-cache build-base=0.5-r1 autoconf=2.69-r2 \
     && docker-php-source extract \
-    && pecl install xdebug-2.7.2 \
+    && pecl install xdebug-2.9.0 \
     && docker-php-ext-enable xdebug \
     && docker-php-source delete \
     && apk del build-dependencies \
