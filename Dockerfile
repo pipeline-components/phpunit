@@ -1,4 +1,4 @@
-FROM composer:1.9.1 as build
+FROM composer:1.9.3 as build
 
 COPY app/ /app/
 RUN composer install --no-interaction --no-scripts --no-progress
