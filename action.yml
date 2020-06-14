@@ -1,5 +1,5 @@
 ---
-name: 'phpunit'
+name: 'pipeline-components-phpunit'
 description: 'phpunit by Pipeline Components'
 author: 'Robbert Müller <spam.me@grols.ch>'
 branding:
