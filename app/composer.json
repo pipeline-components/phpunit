@@ -1,6 +1,6 @@
 {
     "type": "application",
     "require": {
-        "phpunit/phpunit": "9.4.4"
+        "phpunit/phpunit": "9.5.0"
     }
 }
