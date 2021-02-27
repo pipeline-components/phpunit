@@ -22,7 +22,7 @@ The image is based on php:5.6-alpine3.8
 ```yaml
 phpunit:
   stage: linting
-  image: pipelinecomponents/phpunit:latest
+  image: registry.gitlab.com/pipeline-components/phpunit:latest
   script:
     - phpunit .
 ```
