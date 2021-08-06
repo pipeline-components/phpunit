@@ -15,11 +15,14 @@ ENTRYPOINT ["/entrypoint.sh"]
 ENV DEFAULTCMD phpunit
 
 ENV PATH "$PATH:/app/vendor/bin/"
+# hadolint ignore=DL3018
 RUN apk add --no-cache 	curl=7.66.0-r0 \
-    && apk add --virtual build-dependencies --no-cache build-base=0.5-r1 autoconf=2.69-r2 \
+    && apk add --virtual build-dependencies --no-cache build-base autoconf libxml2-dev  \
     && docker-php-source extract \
     && pecl install xdebug-3.0.1 \
     && docker-php-ext-enable xdebug \
+    && docker-php-ext-install soap \
+    && docker-php-ext-enable soap \
     && docker-php-source delete \
     && apk del build-dependencies \
     && pecl clear-cache \
