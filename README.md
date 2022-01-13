@@ -93,7 +93,7 @@ SOFTWARE.
 [issue]: https://gitlab.com/pipeline-components/phpunit/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [layers-shield]: https://images.microbadger.com/badges/image/pipelinecomponents/phpunit.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [microbadger]: https://microbadger.com/images/pipelinecomponents/phpunit
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [pulls-shield]: https://img.shields.io/docker/pulls/pipelinecomponents/phpunit.svg
