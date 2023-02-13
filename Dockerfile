@@ -17,9 +17,9 @@ ENV DEFAULTCMD phpunit
 ENV PATH "$PATH:/app/vendor/bin/"
 # hadolint ignore=DL3018
 RUN apk add --no-cache 	curl \
-    && apk add --virtual build-dependencies --no-cache build-base autoconf libxml2-dev  \
+    && apk add --virtual build-dependencies --no-cache build-base autoconf libxml2-dev  linux-headers \
     && docker-php-source extract \
-    && pecl install xdebug-3.1.2 \
+    && pecl install xdebug-3.2.0 \
     && docker-php-ext-enable xdebug \
     && docker-php-ext-install soap \
     && docker-php-ext-enable soap \
