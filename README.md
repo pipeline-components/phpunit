@@ -13,7 +13,7 @@
 ## Usage
 
 The image is for running phpunit, phpunit is installed in /app/ in case you need to customize the install before usage.
-The image is based on php:5.6-alpine3.8
+The image is based on php:8.2-alpine3.17
 
 ## Examples
 
