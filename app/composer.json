@@ -1,7 +1,7 @@
 {
     "type": "application",
     "require": {
-        "phpunit/phpunit": "12.3.14"
+        "phpunit/phpunit": "12.3.15"
     },
     "license": "MIT",
     "description": "Pipeline Components Phpunit",
