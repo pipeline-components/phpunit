@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ed74eb9305ed27fafed3f93d836ae71",
+    "content-hash": "2eb48aa6a99acc9284a88110021bd349",
     "packages": [
         {
             "name": "myclabs/deep-copy",
@@ -626,16 +626,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "13.0.3",
+            "version": "13.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a9c20642ffd2098c0f9e687c00849afbce2f23c7"
+                "reference": "d57826e8921a534680c613924bfd921ded8047f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a9c20642ffd2098c0f9e687c00849afbce2f23c7",
-                "reference": "a9c20642ffd2098c0f9e687c00849afbce2f23c7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d57826e8921a534680c613924bfd921ded8047f4",
+                "reference": "d57826e8921a534680c613924bfd921ded8047f4",
                 "shasum": ""
             },
             "require": {
@@ -704,7 +704,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.0.3"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.0.5"
             },
             "funding": [
                 {
@@ -728,7 +728,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-16T08:38:33+00:00"
+            "time": "2026-02-18T12:40:03+00:00"
         },
         {
             "name": "sebastian/cli-parser",
