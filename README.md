@@ -71,7 +71,7 @@ This project is licensed under the [MIT License](./LICENSE) by [Robbert Müller]
 [hassio-addons]: https://github.com/hassio-addons
 [issue]: https://gitlab.com/pipeline-components/phpunit/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-green.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2027.svg
 [mjrider]: https://gitlab.com/mjrider
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [pulls-shield]: https://img.shields.io/docker/pulls/pipelinecomponents/phpunit.svg?logo=docker
